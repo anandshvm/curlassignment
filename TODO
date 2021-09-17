@@ -1,51 +1,5 @@
-Multiuser snake and ladder game: rest apis
-services developed should be able to scale horizonatally 
-deploy on kubernetes and optimize based on load [autoscale services based on load]
-
-
-
-REST APIs list
-
-// create new game 
-   initialize the game and store in db, refer by id created by, 
-   ladders[start, end], snakes:[start, end]
-
-get board by id: 
-
-// join the game / 
-// add people to game 
-  [playerid, gameId]
-  [playerid, gameId]
-  [playerid, gameId]
-
-
-initialize player:
-  assign the initial place 
-
-
-roll the dice, 
-   based on output-> 
-   move the player to new postion, if new postion has snake or ladder, go to that postion, 
-
-if any move reaches the 100 declare the winner: 
-
-
-
-
-
-
-ROLL DICE :
-roll dice, 
-    add to players curr pos ,
-    final postion: check if snake or ladder till there is none on 100, if not hundered return else return win, 
-    return updated board, and also return the happened event summary summary: 
-
-
-
-deployment:
-
 https://www.callicoder.com/deploy-containerized-go-app-kubernetes/
-https://searchitoperations.techtarget.com/tutorial/How-to-auto-scale-Kubernetes-pods-for-microservices
+
 
 docker build -t test .
 
@@ -73,7 +27,7 @@ minikube addons enable metrics-server
 cd testcharts/
 
 
-/usr/local/bin/helm install  myhelm  .  --set config.SENDER_EMAIL=atri.manish.iiita@gmail.com --debug 
+/usr/local/bin/helm install  myhelm  .  --set config.SENDER_EMAIL=a@gmail.com --debug 
 
 kubectl get pods, 
 kubectl get services 
