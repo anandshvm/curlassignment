@@ -16,7 +16,7 @@ spec:
     spec: 
       containers: 
         - name: microsvc
-          image: "atri/test:latest"
+          image: "ashivam/myassignment:latest"
           imagePullPolicy: Always
           ports: 
             - 
