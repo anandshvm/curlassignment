@@ -14,7 +14,9 @@ Steps:
 
 ```
 docker build -t test .
-dokcer run -d -p 31000:31000 test 
+docker run -d -p 31000:31000 test 
+docker push ashivam/myassignment:latest
+
 
 ```
  
